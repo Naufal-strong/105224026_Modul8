@@ -14,7 +14,6 @@ public class PengirimanUdara extends LayananPengiriman implements LacakKargo, As
     public double hitungOngkosKirim() {
         return (beratBarang * 25000) + (jarakTempuh * 5000);
     }
-
     @Override
     public double hitungPremi(double nilaiBarang) {
         return 0.03 * nilaiBarang;
