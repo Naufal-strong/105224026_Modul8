@@ -1,4 +1,3 @@
-
 public abstract class Pembayaran {
     protected String namaPembayar;
     protected double nominal;
