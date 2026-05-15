@@ -1,4 +1,3 @@
-// File: PengirimanUdara.java
 public class PengirimanUdara extends LayananPengiriman implements LacakKargo, Asuransi {
     private String nomorPenerbangan;
     private String statusSaatIni;
@@ -13,13 +12,11 @@ public class PengirimanUdara extends LayananPengiriman implements LacakKargo, As
 
     @Override
     public double hitungOngkosKirim() {
-        // Algoritma tarif dasar armada udara
         return (beratBarang * 25000) + (jarakTempuh * 5000);
     }
 
     @Override
     public double hitungPremi(double nilaiBarang) {
-        // Mengembalikan nilai premi sebesar 3% (0.03) dari nilai barang
         return 0.03 * nilaiBarang;
     }
 
@@ -32,8 +29,6 @@ public class PengirimanUdara extends LayananPengiriman implements LacakKargo, As
     public String cekLokasiTerakhir() {
         return this.statusSaatIni;
     }
-
-    // Getter (opsional, namun berguna untuk mengambil nilai barang saat casting polimorfik)
     public double getNilaiBarang() {
         return nilaiBarang;
     }
