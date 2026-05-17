@@ -25,7 +25,7 @@ public class Main {
 
             if (layanan instanceof Asuransi) {
                 Asuransi asuransi = (Asuransi) layanan;
-                asuransi.cetakPolis(); // Memanggil default method
+                asuransi.cetakPolis(); 
                 
                 double nilaiBarang = 0;
                 if (layanan instanceof PengirimanUdara) {
